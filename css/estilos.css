@@ -1,0 +1,263 @@
+/*RESET*/
+@import url("reset.css");
+
+/*ICOMOON FUENTE*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?c57ivm');
+  src:  url('fonts/icomoon.eot?c57ivm#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?c57ivm') format('truetype'),
+    url('../fonts/icomoon.woff?c57ivm') format('woff'),
+    url('../fonts/icomoon.svg?c57ivm#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook2:before {content: "\ea91"; opacity: 0.5; transition: 500ms;}
+.icon-instagram:before {content: "\ea92"; opacity: 0.5; transition: 500ms;}
+.icon-behance2:before {content: "\eaa9"; opacity: 0.5; transition: 500ms;}
+.icon-menu:before {content: "\e9bd";}
+
+
+
+
+/*ESTILOS*/
+
+/*INICIO*/
+body {font-family: 'Source Sans Pro', sans-serif; background-color: lightgrey; color: white; 
+  max-width: 100%;}
+body a {text-decoration: none; color: white;}
+
+header {text-align: center; background-color: #252525; padding: 20px 10px; position: fixed; 
+  width: 100%; z-index: 1;}
+
+nav{max-width: 700px; display: inline-block; align-items: center;
+  transition: 500ms;}
+
+nav ul li a {color: white; text-decoration:none;}
+
+nav ul { display: flex;}
+
+nav ul li {margin: 10px 30px; text-transform: uppercase;}
+
+#botonmenu {font-size: 36px; margin: 8px 8px 0px 0px;
+  background-color:white; border:none; color: #252525; border-radius: 50%; 
+  transform: translateX(2500px); 
+  transition: 500ms; cursor: pointer;}
+
+section.division {height: 100vh; width: 100%}
+
+section.division.inicio {background: url("../assets/fondo1.jpg"); background-size: auto 100vh; 
+  background-repeat: no-repeat; background-attachment: fixed;
+  background-position: center;}
+
+.logo {text-align: center;}
+.logo figure {text-align: center; max-width: 385px; display: inline-block;}
+
+.logo h1{color: white; text-align: right; font-size: 28px;}
+
+.redes {font-size: 40px; position:fixed; bottom: 20px; right: 20px;  z-index: 1; }
+.redes a {text-shadow: 2px 2px 10px black; z-index: 2;}
+
+.redes span{padding: 0px 4px; }
+
+/*SERVICIOS*/
+
+section.division {background-color: #252525; display: flex;
+  align-items: center; justify-content: center; text-align: center;}
+
+.division.servicios {background: url("../assets/fondo3.jpg"); background-position: center; 
+  background-attachment: fixed;}
+
+
+section.division h2{font-size: 50px;}
+
+section.division.servicios figure{display: inline-block; margin: 40px 30px;}
+section.division.servicios figure img{max-width: 200px; border-radius: 50%;}
+section.division h3 {font-size: 16px; margin-top: 15px;}
+
+section.division.servicios a{display: block; text-align: right; color: white; text-decoration: none;}
+
+
+/*GALERIA*/
+
+
+section.division.galeria {background-color: lightgrey; color: #252525; 
+  transition: 500ms;}
+section.division.galeria h2, section.division.galeria p {margin-bottom: 20px;}
+
+.collage {width: 1281px; display: flex; flex-wrap: wrap;}
+.collage figure {position: relative; max-width: 427px; margin-bottom: -3px; overflow: hidden;
+  background-color: black;}
+.collage figure img {max-width: 100%; transition: 700ms;}
+
+.collage .datosgaleria {background-color: rgba(255, 255, 255, 0.7); color: #252525;}
+
+
+.datosgaleria {width: 100%; position: absolute; bottom: 0px; 
+  padding: 10px; opacity: 0; transform: translateY(30px);
+  transition: 500ms;}
+
+.datosgaleria p:last-child{font-size: 10px;}
+
+/*NOSOTROS*/
+
+section.division.nosotros {background: url("../assets/fondo2.jpg"); background-size: 100vw auto; 
+  background-repeat: no-repeat; background-attachment: fixed;
+  background-position: center; }
+
+.nuestrosdatos {background-color: rgba(255,255,255,0.6); max-width: 650px; color: #252525;}
+
+.nuestrosdatos h2 {margin: 50px 0px;}
+.nuestrosdatos p {margin: 0px 30px 50px 30px; text-align: justify; line-height: 30px;}
+
+/*CONTACTOS*/
+
+section.division.contactos {height: calc(100vh - 80px); background-color: lightgrey;}
+.contactos .nuestrosdatos {padding: 0px 20px;}
+.contactos .formulario {display: flex;}
+.formulario .colleft, .formulario .colright {width: 50%; margin: 40px;}
+.formulario .colleft input {width: 100%;}
+.formulario .colright {}
+.formulario .colright p, .formulario .colright a, .formulario .colright h5 { 
+  margin: 0px;  text-align: right; line-height: auto; color: #252525;}
+
+.formulario input, .formulario textarea {background-color: transparent; border: solid #252525 2px; 
+  border-radius: 5px; font-size: 14px; padding: 5px; margin-bottom: 10px;}
+.formulario textarea {font-family: 'Source Sans Pro', sans-serif; resize: none; width: 100%;}
+.formulario input[type="submit"]{background-color: #252525; max-width: 70px; color: lightgrey;
+  font-family: 'Source Sans Pro', sans-serif; cursor: pointer;}
+
+.formulario .colleft {text-align: left;}
+
+#vermapa {font-size: 14px; text-decoration: underline;}
+
+/*FOOTER*/
+
+footer{height: 80px; text-align: center; background-color: #252525; display: flex; 
+  align-items: center; justify-content: center; flex-flow: column; line-height: 30px;}
+
+/*----------------------ANIMACIONES-----------------*/
+
+nav ul li a:hover {color: lightgrey; transition: 500ms;}
+
+.redes a:hover{color: black; transition: 300ms; opacity: 1;}
+
+.collage figure:hover .datosgaleria {transform: translateY(0px); ;opacity: 1; }
+
+.collage figure:hover img {transform: scale(1.1); opacity: 0.6; }
+
+
+
+/*-------------RESPONSIVE-------------------------*/
+
+
+@media screen and (max-width: 1370px)
+{
+  section.division.nosotros {background-size: auto 100vh;}
+  section .contenedor {max-width: 100%}
+
+}
+
+@media screen and (max-width: 1280px)
+{ 
+  
+
+  section.division.servicios a{text-align: center; background-color: rgba(255,255,255,0.4);
+   padding: 30px; border-radius: 10px; display: block; margin: 0px auto; width: 100px;
+    transition: 500ms;}
+
+  section.division.galeria {height: auto; padding: 60px 0px;}
+  section.division.galeria .contenedor {max-width: 100%; max-height: 100%}
+  .collage {width: 100%; justify-content: center;}
+
+  
+
+}
+
+@media screen and (max-width: 720px)
+{ 
+  /*MENU NAVEGACION*/
+  header {height: 60px; text-align: right;}
+  header nav {transform: translateX(1000px);}
+  header {padding: 0}
+  header nav {background-color: #252525; width: 100%;}
+  header nav ul {display: block;}
+  header nav ul li {text-align: right; border-bottom: solid 1px lightgrey;
+    font-size: 20px; padding: 30px;}
+ header nav ul li a {width: 100vw; height: 100%;}   
+
+  #botonmenu{transform: translateX(0px)}
+  .menuactivo{transform: translateX(0px);}
+  
+  .redes {position: fixed; top: 15px; left: 10px; font-size: 26px;
+    text-align: left; max-height: 60px; max-width: 50%;}
+  .redes a *{opacity: 1;}
+
+  
+
+  /*INICIO*/
+  section.division {height: auto; text-align: center; min-height: 100vh;}
+
+ .logo {}
+ .logo figure {max-width: 200px;}
+ .logo figure h1{text-align: center; font-size: 36px;}
+ .logo figure img{max-width: 100%;}
+  
+ /*SERVICIOS*/
+ section.division.servicios {padding: 25px 0px;}
+ 
+ 
+  /*GALERIA*/
+
+   section.division.galeria {padding-bottom: 0px;}
+  section.division.galeria p {margin-bottom: 30px;}
+  
+  .collage figure .datosgaleria {transform: translateY(0px); ;opacity: 1; }
+  .collage figure .datosgaleria {background-color: rgba(255,255,255,0.4);}
+  .collage figure .datosgaleria p:first-of-type{display: none;}
+  .collage figure .datosgaleria h5{font-size: 30px;}
+  .collage figure .datosgaleria p:last-of-type {padding-top: 10px; font-size: 15px;}
+
+  /*NOSOTROS*/
+
+  section.division.nosotros {padding: 0px; align-items: flex-start; justify-content: left; 
+    margin: 0px; width: 100}
+  section.division.nosotros .nuestrosdatos {margin: 20px; max-width: 400px; margin: auto 20px;}
+  section.division.nosotros .nuestrosdatos p{text-align: left;}
+  section.division.nosotros p {font-size: 20px;}
+
+  /*CONTACTOS*/
+  section.division.contactos {margin: 0px; padding: 0px; height: auto;}
+  section.division.contactos h2 {margin: 20px 0px 0px 0px;}
+  section.division.contactos .formulario {flex-wrap: wrap; padding: 0px;}
+  section.division.contactos .formulario div{width: 100%;}
+  section.division.contactos .formulario input {max-width: 100%; box-sizing: border-box; }
+  section.division.contactos .formulario textarea {width: 100%; box-sizing: border-box;}
+
+  #vermapa {font-size: 14px; background-color: #252525; color: lightgrey; padding: 8px;
+    border-radius: 6px; text-decoration: none;}
+}
+
+
+/*ANIMACIONES PARA FADEIN EN JQUERY*/
+#laimagen {display: none;}
+
+#logo {display: none;}
+
+#galeria img {display: none;}

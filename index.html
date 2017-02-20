@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lunart Estudio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- FUENTES -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<!-- BLAZY  -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+	<!-- JQUERY -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+	<header>
+		<button id="botonmenu"><span class="icon-menu"></span></button>
+		<nav id="menuNav">
+			<ul>
+				<li><a href="#inicio">Home</a></li>
+				<li><a href="#servicios">Servicios</a></li>
+				<li><a href="#galeria" id="botongaleria">Galeria</a></li>
+				<li><a href="#nosotros">Nosotros</a></li>
+				<li><a href="#contactos">Contactos</a></li>
+			</ul>
+
+		</nav>
+
+	</header>
+
+	<!--INICIO-->
+
+	<section class="division inicio" id="inicio">
+		<div class="logo">
+			<figure id="logo">
+				<img src="assets/logo.png"/ alt="logo">
+				<h1>Estudio fotográfico</h1>
+			</figure>
+			
+		</div>
+		<div class="redes">
+			<a href="https://www.facebook.com/LlunartEstudioFotografico" target="_blank"><span class="icon-facebook2"></span></a>
+			<a href="https://www.instagram.com/lunartphotography/" target="_blank"><span class="icon-instagram"></span></a>
+			<a href="https://www.behance.net" target="_blank"><span class="icon-behance2"></span></a>
+			 
+			 
+			 
+		</div>
+	</section>
+
+	<!--SERVICIOS-->
+
+	<section class="division servicios" id="servicios">
+		<div class="contenedor">
+			<h2>Servicios</h2>
+			<figure>
+				<img data-src="assets/fotopublicitaria.jpg" class="circulo" alt="Foto Publicitaria" />
+				<h3>Fotografía Publicitaria</h3>
+			</figure>
+			<figure>
+				<img data-src="assets/fotofamiliar.jpg" class="circulo" alt="Foto Familiar" />
+				<h3>Fotografía Familiar</h3>
+			</figure>
+			<figure>
+				<img data-src="assets/estudio.jpg" class="circulo" alt="Alquiler de Estudio" />
+				<h3>Alquiler de estudio</h3>
+			</figure>
+			<a href="">Mas detalles...</a>
+			
+		</div>
+	</section>
+
+	<!--GALERIA-->
+	<section class="division galeria" id="galeria">
+		<div class="contenedor">
+			<h2>Galería</h2>
+			<p>Colecciones de nuestros trabajos favoritos</p>
+
+			<div class="collage" id="collage">
+				<a href="">
+					<figure>
+						<img data-src="assets/collage/familiar.jpg" alt="Foto Familiar" />
+						<div class="datosgaleria">
+							<h5>Familiar</h5>
+							<p>Modelaje para fashion y otros</p>
+							<p>Click para mas imagenes...</p>
+						</div>
+					</figure>
+				</a>	
+
+				<a href="">
+					<figure>
+						<img data-src="assets/collage/fashion.jpg" alt="Foto Fashion"/>
+						<div class="datosgaleria">
+							<h5>Modelaje</h5>
+							<p>Modelaje para fashion y otros</p>
+							<p>Click para mas imagenes...</p>
+						</div>
+					</figure>
+				</a>
+
+				<a href="">
+					<figure>
+						<img data-src="assets/collage/halloween.jpg" alt="Foto Halloween" />
+						<div class="datosgaleria">
+							<h5>Halloween</h5>
+							<p>Modelaje para fashion y otros</p>
+							<p>Click para mas imagenes...</p>
+						</div>
+					</figure>
+				</a>
+			
+				<a href="">
+					<figure>
+						<img data-src="assets/collage/musico.jpg" alt="Foto Musicos" />
+						<div class="datosgaleria">
+							<h5>Musicos</h5>
+							<p>Modelaje para fashion y otros</p>
+							<p>Click para mas imagenes...</p>
+						</div>
+					</figure>
+				</a>
+				
+				<a href="">
+					<figure>
+						<img data-src="assets/collage/niña.jpg" alt="Foto Niña" />
+						<div class="datosgaleria">
+							<h5>Niños</h5>
+							<p>Modelaje para fashion y otros</p>
+							<p>Click para mas imagenes...</p>
+						</div>
+					</figure>
+				</a>
+
+				<a href="">
+					<figure>
+						<img data-src="assets/collage/publicitaria.jpg" alt="Fotografía Publicitaria" />
+						<div class="datosgaleria">
+							<h5>Publicitaria</h5>
+							<p>Modelaje para fashion y otros</p>
+							<p>Click para mas imagenes...</p>
+						</div>
+					</figure>
+				</a>
+			</div>
+			
+		</div>
+	</section>
+
+	<!-- NOSOTROS -->
+
+	<section class="division nosotros" id="nosotros">
+		<div class="nuestrosdatos">
+			<h2>Nosotros</h2>
+			<p>
+				Contamos con estudio completo en un ambiente moderno y vanguardista. Enfocado al mundo fotográfico ideal para sesiones de modelos, moda, catálogos, productos, publicitarias, portadas, familias, embarazadas, bebes, niños, mascotas, personas en general y alquiler de estudio. Estamos también a la orden de aquellos que están iniciando en el mundo de la fotografía y también a aquellos profesionales amantes de la misma.
+			</p>
+			
+		</div>
+	</section>
+
+	<!-- CONTACTOS -->
+
+	<section class="division contactos" id="contactos">
+		<div class="nuestrosdatos">
+			<h2>Contactos</h2>
+			<div class="formulario">
+				<div class="colleft">
+					<form id="formulario">
+						<input type="text" name="nombre" placeholder="Nombre">
+						<input type="email" name="email" placeholder="E-mail" required=""> 
+						<textarea name="textarea" rows="5" placeholder="Mensaje" maxlength="500"></textarea>
+						<input type="submit" name="enviar" value="Enviar" id="botonEnviar">
+					</form>
+				</div>
+				<div class="colright">
+					<p>
+						Avenida República del Salvador y Portugal. Edificio Zanté, Oficina 402.
+						<br>
+						<a target="_blank" href="https://www.google.es/maps/place/Lunart+Estudio/@-0.1804692,-78.4821357,17z/data=!3m1!4b1!4m5!3m4!1s0x91d59a812457f091:0x20d174bd51d3bc3a!8m2!3d-0.1804746!4d-78.479947" id="vermapa">Ver mapa...</a>
+					</p>
+					<p><a href="mailto:info@hotmail.com">info@lunartestudio.com</a></p>
+					<p><a href="tel:0999663978">Tel: 0999663978</a></p>
+
+					<br/>
+
+					<h5>HORARIOS</h5>
+					<p>Lun - Vie: 9am - 10pm</p>
+					<p>Sab: 9am - 2pm</p>
+					
+				</div>	
+			</div>
+			
+			
+			
+		</div>
+		
+	</section>
+	<footer>
+		<a href="">Lunart</a>
+		<p>Quito - Ecuador</p>
+	</footer>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<!-- JAVASCRIPT -->
+	<script type="text/javascript" src="js.js"></script>
+</body>
+</html>
